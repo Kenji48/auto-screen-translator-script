@@ -1,0 +1,1 @@
+sh -c 'grim -g "$(slurp)" /tmp/captura.png && kitty --title OCR sh -c "/myData/auto-screen-translator-script-main/.venv/bin/python -c \"from manga_ocr import MangaOcr; mocr = MangaOcr(); print(mocr(\\\"/tmp/captura.png\\\"))\"; read"'
